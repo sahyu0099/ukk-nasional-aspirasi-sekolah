@@ -1,0 +1,182 @@
+/* ===== FIX BACKGROUND GLOBAL ===== */
+body {
+    background-color: #f0f2f5; /* fallback aman */
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.header p {
+    color: #64748b;
+}
+
+/* ===== GRID ===== */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+/* ===== CARD FIX (INI YANG PENTING) ===== */
+.stat-card,
+.complaint-card {
+    background: #ffffff !important; /* 🔥 paksa muncul */
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ===== STICKY ===== */
+.sticky-card {
+    position: sticky;
+    top: 120px;
+}
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+/* ===== BUTTON ===== */
+.btn-submit {
+    background: #4361ee;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #3a56d4;
+}
+
+/* ===== SECTION ===== */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.count-badge {
+    background: rgba(67,97,238,0.1);
+    color: #4361ee;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+/* ===== EMPTY ===== */
+.empty-state {
+    text-align: center;
+    padding: 4rem;
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+}
+
+/* ===== GRID CARD ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* ===== CARD HEADER ===== */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* ===== IMAGE ===== */
+.image-wrapper {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== TEXT ===== */
+.location {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== RESPONSE ===== */
+.response-box {
+    background: #f8fafc;
+    padding: 1rem;
+    border-left: 4px solid #4361ee;
+    border-radius: 10px;
+}
+
+.response-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #4361ee;
+}
+
+.waiting {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* STATUS */
+.badge-pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.badge-processing {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.badge-done {
+    background: #f0fdf4;
+    color: #15803d;
+}
